@@ -84,8 +84,10 @@ class _DeviceScoresState extends State<DeviceScores> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Confirm'),
-        content: const Text('Are your sure you want to delete this entry?'),
+        title: const Text('Confirm',
+            textScaleFactor: 2, style: TextStyle(fontFamily: 'Girassol')),
+        content: const Text('Are your sure you want to delete this entry?',
+            style: TextStyle(fontFamily: 'Girassol')),
         actions: [
           TextButton(
             onPressed: () async {
